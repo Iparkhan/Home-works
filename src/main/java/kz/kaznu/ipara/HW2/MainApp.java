@@ -4,8 +4,6 @@ import java.util.Arrays;
 
 public class MainApp {
     public static void main(String[] args) {
-        // 1 задание
-       int[] arr= new int[7];
         repeatString(5, "Привет,Деляфруз!");
 
         int[] arr = {4, 6, 8, 9, -3};
