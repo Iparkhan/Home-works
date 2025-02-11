@@ -17,7 +17,7 @@ public class MainApp {
         int[] array1 = {4, 7, 2, 6, 1};
         incrementArray(3, array1);
 
-        int[] array2 = {1, 5, -3, 4, 7, 9};
+        int[] array2 = {1, 5, -3, 5,2, 1};
         compareHalvesSum(array2);
     }
 
@@ -57,11 +57,14 @@ public class MainApp {
         int mid = array2.length / 2;
         int sum1 = 0;
         int sum2 = 0;
+        if (array2.length % 2 != 0) {
+            mid=mid+1;
+        }
 
         for (int i = 0; i < mid; i++) {
             sum1 += array2[i];
         }
-        for (int i = mid; i < array2.length; i++) {
+        for (int i = array2.length/2; i < array2.length; i++) {
             sum2 += array2[i];
         }
 
@@ -74,6 +77,7 @@ public class MainApp {
         }
 
     }
+}
 
 
 
