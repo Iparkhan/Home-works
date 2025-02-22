@@ -2,20 +2,20 @@ package kz.kaznu.ipara.HW5;
 
 public class Main {
     public static void main(String[] args) {
-        Cat cat = new Cat("Зефир", 5.0, 10);
-        Dog dog = new Dog("Марс", 6.0, 2.0, 20);
-        Horse horse = new Horse("Бран", 10.0, 3.0, 30);
+        Cat cat = new Cat("Зефир", 45.0, 80);
+        Dog dog = new Dog("Марс", 65.0, 15.0, 150);
+        Horse horse = new Horse("Бран", 175.0, 45.0, 400);
 
-        cat.run(5);
+        cat.run(20);
         cat.swim(2);
         cat.info();
 
-        dog.run(10);
-        dog.swim(5);
+        dog.run(75);
+        dog.swim(15);
         dog.info();
 
-        horse.run(15);
-        horse.swim(4);
+        horse.run(150);
+        horse.swim(40);
         horse.info();
     }
 }
