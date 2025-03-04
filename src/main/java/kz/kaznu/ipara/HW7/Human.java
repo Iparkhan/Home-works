@@ -8,22 +8,28 @@ class Human {
         this.name = name;
     }
 
-    public void sitOnTransport(Transport transport) {
+    public void boardTransport(Transport transport) {
         this.currentTransport = transport;
-        System.out.println(name + " села на транспорт.");
+        System.out.println(name + " села на " + transport.getName());
     }
 
-    public void getOffTransport() {
-        this.currentTransport = null;
-        System.out.println(name + " слезла с транспорта.");
+    public void leaveTransport() {
+        if (currentTransport != null) {
+            System.out.println(name + " встала с " + currentTransport.getName());
+            currentTransport = null;
+        } else {
+            System.out.println(name + " не находится в транспорте");
+        }
     }
 
     public boolean move(Terrain terrain, int distance) {
         if (currentTransport != null) {
             return currentTransport.move(terrain, distance);
         } else {
-            System.out.println(name + " прошла " + distance + " км пешком.");
+            System.out.println(name + " идёт пешком " + distance + " км по " + terrain);
             return true;
         }
     }
 }
+
+

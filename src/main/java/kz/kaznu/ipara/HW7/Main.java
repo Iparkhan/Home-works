@@ -3,25 +3,27 @@ package kz.kaznu.ipara.HW7;
 public class Main {
     public static void main(String[] args) {
         Human eva = new Human("Ева");
-        Car car = new Car(50);
-        Horse horse = new Horse(30);
-        Bicycle bicycle = new Bicycle();
-        ATV atv = new ATV(40);
+        Transport car = new Car();
+        Transport horse = new Horse();
+        Transport bike = new Bicycle();
+        Transport atv = new ATV();
 
-        eva.sitOnTransport(car);
-        eva.move(Terrain.PLAIN, 20);
-        eva.getOffTransport();
+        eva.boardTransport(car);
+        eva.move(Terrain.РАВНИНА, 10);
+        eva.move(Terrain.БОЛОТО, 5);
+        eva.leaveTransport();
 
-        eva.sitOnTransport(horse);
-        eva.move(Terrain.DENSE_FOREST, 10);
-        eva.getOffTransport();
+        eva.boardTransport(horse);
+        eva.move(Terrain.РАВНИНА, 5);
+        eva.move(Terrain.БОЛОТО, 3);
+        eva.leaveTransport();
 
-        eva.sitOnTransport(bicycle);
-        eva.move(Terrain.PLAIN, 15);
-        eva.getOffTransport();
+        eva.boardTransport(bike);
+        eva.move(Terrain.РАВНИНА, 2);
+        eva.leaveTransport();
 
-        eva.sitOnTransport(atv);
-        eva.move(Terrain.SWAMP, 25);
-        eva.getOffTransport();
+        eva.boardTransport(atv);
+        eva.move(Terrain.ГУСТОЙ_ЛЕС, 20);
+        eva.leaveTransport();
     }
 }
