@@ -65,7 +65,7 @@ class ListUtils {
 
     // 8. Поиск самого молодого сотрудника
     public static Employee getYoungestEmployee(ArrayList<Employee> employees) {
+        // Использование лямбда-выражения для сортировки списка по возрасту
         return Collections.min(employees, Comparator.comparingInt(e -> e.age));
     }
 }
-
