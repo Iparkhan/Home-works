@@ -21,12 +21,14 @@ public class Main {
             ArrayList<Employee> employees = new ArrayList<>(Arrays.asList(
                     new Employee("Alice", 25),
                     new Employee("Bob", 30),
-                    new Employee("Charlie", 22)
+                    new Employee("Charlie", 22),
+                    new Employee("Artur",18),
+                    new Employee("Eva",21)
             ));
 
             System.out.println("Employee Names: " + ListUtils.getEmployeeNames(employees));
-            System.out.println("Employees with age >= 25: " + ListUtils.filterEmployeesByAge(employees, 25));
-            System.out.println("Average age > 26: " + ListUtils.isAverageAgeGreaterThan(employees, 26));
+            System.out.println("Employees with age >= 21: " + ListUtils.filterEmployeesByAge(employees, 21));
+            System.out.println("Average age > 30: " + ListUtils.isAverageAgeGreaterThan(employees, 30));
             System.out.println("Youngest Employee: " + ListUtils.getYoungestEmployee(employees));
         }
 }
