@@ -31,7 +31,7 @@ public class ArrayProcessor {
                                          {"7", "8", "9"}};
 
         String[][] incorrectDataArray = {{"1", "2", "3", "4"},
-                                         {"5", "X", "7", "8"},
+                                         {"5", "v", "7", "8"},
                                          {"9", "10", "11", "12"},
                                          {"13", "14", "15", "16"}};
 
@@ -52,6 +52,7 @@ public class ArrayProcessor {
         } catch (AppArraySizeException | AppArrayDataException e) {
             System.out.println("Ошибка: " + e.getMessage());
         }
+        System.err.println("BOOM");
     }
 }
 
