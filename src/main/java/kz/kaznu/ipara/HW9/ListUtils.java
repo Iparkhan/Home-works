@@ -1,6 +1,7 @@
 package kz.kaznu.ipara.HW9;
 import java.util.*;
 class ListUtils {
+    // 1. Создание списка чисел в диапазоне [min, max]
     public static ArrayList<Integer> generateRange(int min, int max) {
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = min; i <= max; i++) {
@@ -67,3 +68,4 @@ class ListUtils {
         return Collections.min(employees, Comparator.comparingInt(e -> e.age));
     }
 }
+
