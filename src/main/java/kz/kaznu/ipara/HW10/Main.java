@@ -11,7 +11,7 @@ public class Main {
         pb.add("Нурали", "777-888");
         pb.add("Ислам", "999-000");
 
-        // Ввод имени для поиска
+
         System.out.print("Введите имя для поиска номеров: ");
         Scanner scanner = new Scanner(System.in);
         String searchName = scanner.nextLine();
@@ -23,7 +23,7 @@ public class Main {
             System.out.println("Телефоны " + searchName + ": " + numbers);
         }
 
-        // Ввод номера для проверки
+
         System.out.print("Введите номер телефона для проверки: ");
         String phoneToCheck = scanner.nextLine();
         System.out.println("Есть ли номер " + phoneToCheck + "? " + pb.containsPhoneNumber(phoneToCheck));
