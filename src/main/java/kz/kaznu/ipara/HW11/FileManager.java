@@ -19,7 +19,7 @@ public class FileManager {
         }
 
         for (File file : files) {
-            System.out.println("- " + file.getName());
+            System.out.println(" " + file.getName());
         }
 
         // Запрос имени файла
